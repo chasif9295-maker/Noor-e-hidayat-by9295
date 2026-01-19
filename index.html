@@ -29,42 +29,43 @@
             text-align: center;
         }
 
-        /* Logo Area (Half Screen) */
+        /* Logo Area (Bigger Circle) */
         .logo-container {
-            height: 50vh; width: 100%;
+            height: 55vh; /* سائز تھوڑا مزید بڑھا دیا */
+            width: 100%;
             display: flex; align-items: center; justify-content: center;
         }
         .main-logo {
-            width: 200px; height: 200px;
-            border: 3px solid var(--gold);
+            width: 280px; height: 280px; /* دائرہ بڑا کر دیا */
+            border: 4px solid var(--gold);
             border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            font-size: 70px;
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+            font-size: 100px; /* آئیکن بھی بڑا کر دیا */
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.3);
             background: radial-gradient(circle, #1a1a1a, #000);
         }
 
         .content-area { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; width: 100%; }
         
-        #welcome-note { font-size: 28px; color: var(--gold); margin-bottom: 25px; font-weight: bold; min-height: 40px; }
+        #welcome-note { font-size: 32px; color: var(--gold); margin-bottom: 20px; font-weight: bold; }
 
-        .lang-switcher { display: flex; gap: 12px; justify-content: center; margin-bottom: 30px; }
+        .lang-switcher { display: flex; gap: 15px; justify-content: center; margin-bottom: 30px; }
         .lang-btn {
-            background: transparent; border: 1px solid var(--gold);
-            color: var(--white); padding: 10px 20px; border-radius: 8px;
-            cursor: pointer; transition: 0.3s; font-size: 16px;
+            background: transparent; border: 1.5px solid var(--gold);
+            color: var(--white); padding: 10px 22px; border-radius: 10px;
+            cursor: pointer; transition: 0.3s; font-size: 18px;
         }
         .lang-btn.active { background: var(--gold); color: black; font-weight: bold; }
 
-        .footer-area { width: 100%; padding-bottom: 50px; display: flex; justify-content: center; }
+        .footer-area { width: 100%; padding-bottom: 40px; display: flex; justify-content: center; }
         .open-btn {
-            width: 85%; max-width: 320px;
-            height: 60px;
+            width: 85%; max-width: 350px;
+            height: 65px;
             background-color: var(--gold);
-            color: black; border: none; border-radius: 35px;
-            font-size: 22px; font-weight: bold;
+            color: black; border: none; border-radius: 40px;
+            font-size: 24px; font-weight: bold;
             cursor: pointer;
-            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
         }
     </style>
 </head>
