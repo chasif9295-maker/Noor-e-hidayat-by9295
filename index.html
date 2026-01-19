@@ -29,20 +29,24 @@
             text-align: center;
         }
 
-        /* Logo Area (Bigger Circle) */
+        /* Logo Area */
         .logo-container {
-            height: 55vh; /* سائز تھوڑا مزید بڑھا دیا */
+            height: 55vh;
             width: 100%;
             display: flex; align-items: center; justify-content: center;
         }
         .main-logo {
-            width: 280px; height: 280px; /* دائرہ بڑا کر دیا */
+            width: 280px; height: 280px;
             border: 4px solid var(--gold);
             border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            font-size: 100px; /* آئیکن بھی بڑا کر دیا */
             box-shadow: 0 0 40px rgba(212, 175, 55, 0.3);
-            background: radial-gradient(circle, #1a1a1a, #000);
+            background: white; /* لوگو کا بیک گراؤنڈ سفید رکھا ہے کیونکہ تصویر سفید ہے */
+            overflow: hidden;
+        }
+        .main-logo img {
+            width: 100%; height: 100%;
+            object-fit: contain; /* اس سے لوگو کٹے گا نہیں اور پورا نظر آئے گا */
         }
 
         .content-area { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; width: 100%; }
@@ -73,7 +77,9 @@
 
     <div class="welcome-screen">
         <div class="logo-container">
-            <div class="main-logo">🌙</div>
+            <div class="main-logo">
+                <img src="IMG-20260118-WA0001(1).jpg" alt="Logo">
+            </div>
         </div>
 
         <div class="content-area">
